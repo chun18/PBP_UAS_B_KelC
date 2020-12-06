@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".HomeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_geo"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="#8BC34A"
+            android:text="Perpusnas"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/img"
+            app:layout_constraintTop_toTopOf="@id/img" />
+
+        <Button
+            android:id="@+id/btn_Profil"
+            android:layout_width="107dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="80dp"
+            android:text="Profil Saya"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8BC34A"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/btn_geo"
+            app:layout_constraintTop_toTopOf="@id/img" />
+
+        <Button
+            android:id="@+id/btn_Logout"
+            android:layout_width="67dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="80dp"
+            android:backgroundTint="#8BC34A"
+            android:textSize="7dp"
+            android:text="Logout"
+            app:layout_constraintStart_toEndOf="@id/btn_Profil"
+            app:layout_constraintTop_toTopOf="@id/btn_Profil" />
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:text="List Ujian"
+                android:textColor="#FFFFFF"
+                style="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/user_rv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    tools:listitem="@layout/item_user" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Tambah Ujian"
+                android:layout_marginStart="270dp"
+                android:backgroundTint="#8BC34A"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

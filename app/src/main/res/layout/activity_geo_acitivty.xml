@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GeoAcitivty">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/gambar"
+        android:layout_marginStart="55dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Perpustakaan Nasional Republik Indonesia (Perpusnas) adalah Lembaga Pemerintah Nonkementerian yang melaksanakan tugas pemerintahan dalam bidang perpustakaan yang berfungsi sebagai perpustakaan pembina, perpustakaan rujukan, perpustakaan deposit, perpustakaan penelitian, perpustakaan pelestarian, dan pusat jejaring perpustakaan, serta berkedudukan di ibu kota negara. Gedung Fasilitas Layanan Perpustakaan Nasional berlokasi di Jalan Medan Merdeka Selatan No.11, Jakarta dan sebagian besar perkantorannya di Jalan Salemba Raya No. 28A. Perpustakaan Nasional berada di bawah dan bertanggung jawab kepada Presiden. Pada tanggal 14 September 2017, Presiden Joko Widodo meresmikan Gedung Fasilitas Layanan Perpusnas baru yang merupakan perpustakaan nasional tertinggi di dunia (126,3 meter) dengan 27 lantai, termasuk tiga lantai parkir bawah tanah (basement)"/>
+    <Button
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#8BC34A"
+        android:drawableEnd="@drawable/ic_baseline_location_on_24"
+        android:text="Check Location"/>
+</LinearLayout>
